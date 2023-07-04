@@ -1,29 +1,18 @@
 const conditionalSum = function(values, condition) {
-  if values num % 2 === 0 ;
-  return (condition "even")
-} else if { 
-  if values num % 1 === 0 ; 
-  return (condition "odd")
+  let sum = 0;
 
-console.log(conditionalSum([1, 2, 3, 4, 5], "even"));
-console.log(conditionalSum([1, 2, 3, 4, 5], "odd"));
-console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
-console.log(conditionalSum([], "odd"));
+  for (let i = 0; i < values.length; i++) {
+    if (condition === "even" && values[i] % 2 === 0) {
+      sum += values[i];
+    } else if (condition === "odd" && values[i] % 2 !== 0) {
+      sum += values[i];
+    }
+  }
+  return sum; // forgot to return only got undefined
 };
+console.log(conditionalSum([1, 2, 3, 4, 5], "even")); // 6
+console.log(conditionalSum([1, 2, 3, 4, 5], "odd")); // 9
+console.log(conditionalSum([13, 88, 12, 44, 99], "even")); // 144
+console.log(conditionalSum([], "odd"));
 
-// pulling previous code from isodd and iseven
-/*const isEven  = function (num) {
-  return num % 2 === 0;
 }
-isEven
-
-console.log("3 is odd: " + isOdd(3)); // paste into terminal at end to test 
-console.log("8 is odd: " + isOdd(8)); // paste into terminal at end to test 
-
-const isOdd  = function (num) {
-  return num % 1 === 0;
-}
-
-console.log(isOdd(3));
-console.log(isOdd(8));
-

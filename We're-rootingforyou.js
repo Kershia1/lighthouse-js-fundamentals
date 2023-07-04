@@ -34,34 +34,20 @@ return vegetables.submitter; // to get name?
 //try 4 finally returned a workign code, however vegatable is not defined, not returning the name of the highest submitter. Need to add something like return vegtables:submitter? as the highest value?
 
 const judgeVegetable = function(vegetables, metric) {
-
-  vegetables = [{
-    submitter: 'Old Man Franklin',
-    redness: 10,
-    plumpness: 5
-  },
-    {
-      submitter: 'Sally Tomato-Grower',
-      redness: 2,
-      plumpness: 8
-    },
-    {
-      submitter: 'Hamid Hamidson',
-      redness: 4,
-      plumpness: 3
-    }
-  ];
-  let highestMetric = -Infinity; // lowest point to start count from and store number with a -integer
+  let highestMetric = -Infinity;
   let metricWithHighestSum;
 
-  for (const vegetables of vegetables) {
-    const sum = vegetables.plumpness + vegetables.redness; // key pairs to sum 
+  for (const veg of vegetables) {
+    const sum = veg[metric];
 
-    if (sum > highestMetric) { // finally soving values of objects 
+    if (sum > highestMetric) {
       highestMetric = sum;
-      metricWithHighestSum = [vegetables.submitter]; // hopefullty get name
+      metricWithHighestSum = veg.submitter;
     }
-    return metricWithHighestSum;
   }
+
+  return metricWithHighestSum;
 };
+
+  
 // should hopefully return the highest combined metric of my key pair objects ? (fingers crossed)
