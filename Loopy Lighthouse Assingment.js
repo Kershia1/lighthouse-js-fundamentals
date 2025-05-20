@@ -23,7 +23,6 @@
  4) Must still print each iteration to console
  
  */
-const num = 100;
 
 for (num = 100; num <= 200; num++) {
   let results= 
