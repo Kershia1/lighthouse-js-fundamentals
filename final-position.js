@@ -12,21 +12,21 @@ Desired output:
 
 */
 
-const moves = ['north', 'north', 'west', 'west', 'north', 'east','north']  
+const moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north'];
 
 const finalPosition = (moves) => {
   let x = 0;
   let y = 0;
 
   function paradeMoves(coord, x, y) {
-  switch (coord) {
-    case 'north': return [x, y + 1];
-    case 'south': return [x, y - 1];
-    case 'east': return [x + 1, y];
-    case 'west': return [x - 1, y];
+    switch (coord) {
+      case 'north': return [x, y + 1];
+      case 'south': return [x, y - 1];
+      case 'east': return [x + 1, y];
+      case 'west': return [x - 1, y];
+      default: return [x, y];
+    }
   }
-  console.log(coord, x,y);
-}
 
   for (const move of moves) {
     [x, y] = paradeMoves(move, x, y);
