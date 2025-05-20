@@ -1,4 +1,9 @@
 
+
+
+
+/*
+
 // will try to simplify and re-move unessecary recursives bracets ect.. and nested fucntion calls still need to read more about and play with to understan
 
 
@@ -21,3 +26,5 @@ const ageCalculator = function (name, dob, year) {
 
 // Example usage
 console.log(ageCalculator("Suzie", 1984, 2016));
+
+*/
