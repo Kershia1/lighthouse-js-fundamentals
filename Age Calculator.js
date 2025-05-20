@@ -1,8 +1,26 @@
 
+/*
+1) Find age by Birth Date by making a new function ageCalculator
 
+2) Params: 
+  name (string)
+  yearOfBorth: num for year of birth
+  currentYear: a num for current calendar year
+
+  Desired results: 
+  ageCalculator("Suzie", 1983, 2015);
+
+  Output as a string:
+  "Suzie is 32 years old."; 
+*/
 
 
 /*
+
+
+
+
+//Previous Attempt 2 years ago
 
 // will try to simplify and re-move unessecary recursives bracets ect.. and nested fucntion calls still need to read more about and play with to understan
 
