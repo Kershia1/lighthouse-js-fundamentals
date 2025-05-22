@@ -43,8 +43,8 @@ Warning */
 
 /* try passed needed to alter my for statment working from beginning to end of the area, and return the final vale with the lastIndex of variable, also needed to decrement with index not value */
 function lastIndexOf(collection, target) {
-  var lastIndex = -1;
-  for (var i = 0; i < collection.length; i++) {
+  let lastIndex = -1;
+  for (let i = 0; i < collection.length; i++) {
     if (collection[i] === target) {
       lastIndex = i;
     }
