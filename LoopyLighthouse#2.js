@@ -15,9 +15,9 @@ function loopyLighthouse(range, multiples, words) {
 
   for (range = 15; range <= 90; range++) {
     let results =
-      range % 3 === 0 && range % 4 === 0 ? "LoopyLighthouse" :
-        range % 3 === 0 ? "Loopy" :
-          range % 4 === 0 ? "Lighthouse" :
+      range % 2 === 0 && range % 5 === 0 ? "BattyBeacon" :
+        range % 2 === 0 ? "Batty" :
+          range % 5 === 0 ? "Beacon" :
             range;
 
     console.log(results);
