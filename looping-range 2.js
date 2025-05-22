@@ -1,4 +1,5 @@
 function range(start, end, step) {
+  //assing requirement to return empty array if undefined
   let output = [];
 
   // Check for undefined parameters
