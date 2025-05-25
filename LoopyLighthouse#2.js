@@ -9,18 +9,17 @@ loopyLighthouse([15, 90], [2, 5], ["Batty", "Beacon"]);
 Desired Output:
 loopyLighthouse function log to the console all the rangebers from 15 to 90, except replacing multiples of 2 with "Batty", multiples of 5 with "Beacon", and multiples of 2 and 5 with "BattyBeacon"
 
++= is to append to result returned, feeling a bit rusty
+
 */
 
 function loopyLighthouse(range, multiples, words) {
 
-  for (range = 15; range <= 90; range++) {
-    let results =
-      range % 2 === 0 && range % 5 === 0 ? "BattyBeacon" :
-        range % 2 === 0 ? "Batty" :
-          range % 5 === 0 ? "Beacon" :
-            range;
-
-    console.log(results);
+  for (let i = range[0]; i <= range[1]; i++) {
+    let results = '';
+      if(i % multiples[0] === 0) results += words[0]; //"Batty"
+      if(i % multiples[1] === 0) results += words[1]; //"Beacon"
+    console.log(results || i); // or iterator position 
   }
 }
 
