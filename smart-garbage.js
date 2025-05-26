@@ -1,9 +1,9 @@
 /*
 count types of trash placed in trash cans for a waste management company
 
-params: trash, bins
+args: "trash", {bins}
 
-types(keys): waste, recycling, compost
+bins(keys): waste, recycling, compost
 
 (values) increment value by 1 per unit of trash type 
 
@@ -20,7 +20,12 @@ Desired output:
 
 */
 
-
+const smartGarbage = function (trash, bins) {
+ if(Object.keys(bins).includes(trash)) {
+  bins[trash] += 1;
+ }
+ return bins;
+};
 
 
 
