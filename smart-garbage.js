@@ -1,4 +1,30 @@
 /*
+count types of trash placed in trash cans for a waste management company
+
+params: trash, bins
+
+types(keys): waste, recycling, compost
+
+(values) increment value by 1 per unit of trash type 
+
+example function to create: 
+
+smartGarbage("recycling", { waste: 4, recycling: 2, compost: 5 });
+
+Desired output: 
+{
+  waste: 4,
+  recycling: 3,
+  compost: 5
+}
+
+*/
+
+
+
+
+
+/*
 
 /* 1) what we're calling smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 });
 // what we want returned 
