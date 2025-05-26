@@ -21,10 +21,10 @@ Desired output:
 */
 
 const smartGarbage = function (trash, bins) {
- if(Object.keys(bins).includes(trash)) {
-  bins[trash] += 1;
- }
- return bins;
+  if (Object.keys(bins).includes(trash)) {
+    bins[trash] += 1;
+  }
+  return bins;
 };
 
 
