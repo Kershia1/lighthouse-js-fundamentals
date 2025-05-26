@@ -20,7 +20,7 @@ merge([ 4, 5, 6 ], [ 1, 2, 3, 4 ]); =>	sortedMerge[ 1, 2, 3, 4, 4, 5, 6 ]
  */
 function merge (array1) {
   let results = array1
-  .flat(2)
+  .flat(Infinity)
   .filter(el => typeof el === 'number' && !isNaN(el))// if the element from the flattened array is not a number skip
   .sort((a,b) => (a - b));
 
