@@ -1,3 +1,5 @@
+/*
+
 /* 1) what we're calling smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 });
 // what we want returned 
 2) {
@@ -11,7 +13,7 @@ Our function will receive two arguments:
 The first argument, trash, is a string that will tell our function what type of item is being submitted.
 The second argument, bins, is an object containing three properties (waste, recycling, and compost), which hold some numerical value. Our function must increase the correct value in the bins object, and then return the newly updated object.
 // for each functions are not chainable, but the callbackfn can be alterd , only really to work with the this value alkong the length of the array it is called upon, and the interger properties 
-*/
+
 const smartGarbage = function (trash, bins) {
   if(trash = waste: 4, recycling: 2,compost: 5);
   return sortTrash;
@@ -44,3 +46,5 @@ const smartGarbage = function (trash, bins) {
 }
 /* note to myself, I need to keep this from becoming uneccsiarrily complicated. 
 stay with 1 repository example from MDN or FCC or STOF. I am confusing myself by bouncing between everything. 
+
+*/
