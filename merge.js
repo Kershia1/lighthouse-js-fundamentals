@@ -7,8 +7,8 @@
 
  original logic to be changed: 
 
- function concat (array1, array2) {
-  let result = array1.concat(array2);
+ function concat (arr1, arr2, array2) {
+  let result = arr1, arr2.concat(array2);
   return result;
 }
 
@@ -18,16 +18,16 @@ Desired output:
 merge([ 4, 5, 6 ], [ 1, 2, 3, 4 ]); =>	sortedMerge[ 1, 2, 3, 4, 4, 5, 6 ]
 
  */
-function merge (array1) {
-  let results = array1
+function merge (arr1, arr2) {
+  let results = [...arr1, ...arr2]//destructure
   .flat(Infinity)
-  .filter(el => typeof el === 'number' && !isNaN(el))// if the element from the flattened array is not a number skip
+  .filter(el => typeof el === 'number' && !isNaN(el))// if the element from the flattened array is not a number do not return
   .sort((a,b) => (a - b));
 
   return results;
 }
 
-//need a callback for the filter?
+//notes misunderstood key logic of nested arrays. even though provided in a single array, the nested arrays need to be opened and merged togther, ny destructuring and THEN flattening. otherwise all efforts to filter and sort will only work and be returned in each seperate array. 
 
 
 //provided logs for testing
