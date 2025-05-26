@@ -12,14 +12,16 @@
   return result;
 }
 
+using inifintiy, so I dont have to specify depth to flatten to in the array
+
 Desired output:
 merge([ 4, 5, 6 ], [ 1, 2, 3, 4 ]); =>	sortedMerge[ 1, 2, 3, 4, 4, 5, 6 ]
 
  */
 
-function concat (array1, array2) {
-  let result = array1.concat(array2);
-  return result;
+function merge (array1) {
+  let results = array1.flat(2);
+  return results;
 }
 
 
