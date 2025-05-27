@@ -16,13 +16,19 @@ supercalifragalisticexpialidocious
  */
 
 const camelCase = function (input) {
-   const string = input.split(' '); //look for an empty space, seperate each word in string
-  return string.map((word, index) => {
-      ? (index === 0) :
-return word[0].toUpperCase() + word.slice(1) + word.join;
-    })
+  return input
+  .toLowerCase()
+  .split(' ')
+
 };
 
 console.log(camelCase("this is a string"));
 console.log(camelCase("loopy lighthouse"));
 console.log(camelCase("supercalifragalisticexpialidocious"));
+
+
+
+//this is throwing undefined
+  //.map((word, index) => {
+   // index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+  //  })
