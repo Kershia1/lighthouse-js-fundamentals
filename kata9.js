@@ -7,7 +7,10 @@
 loopyLighthouse
 supercalifragalisticexpialidocious
 
-I could use regex, or do extra with clear to read code?
+-I could use regex, or do extra with clear to read code?
+-deconstruct an use filter and join
+-split and join
+-reread docs on charAt()
 
 
  */
@@ -15,7 +18,7 @@ I could use regex, or do extra with clear to read code?
 const camelCase = function (input) {
 
   for (let i = 0; i >= 0; i++) {
-    //look for an empty space
+    //look for an empty space 
     //remove empty space, next element toUppercase
     //concatenat and return shallow copy.
 
