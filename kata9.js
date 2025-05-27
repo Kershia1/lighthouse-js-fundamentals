@@ -16,14 +16,11 @@ supercalifragalisticexpialidocious
  */
 
 const camelCase = function (input) {
-
-  for (let i = 0; i >= 0; i++) {
-    //look for an empty space 
-    //remove empty space, next element toUppercase
-    //concatenat and return shallow copy.
-
-  }
-
+   const string = input.split(' '); //look for an empty space, seperate each word in string
+  return string.map((word, index) => {
+      ? (index === 0) :
+return word[0].toUpperCase() + word.slice(1) + word.join;
+    })
 };
 
 console.log(camelCase("this is a string"));
