@@ -17,9 +17,12 @@ supercalifragalisticexpialidocious
 
 const camelCase = function (input) {
   return input
-  .toLowerCase()
-  .split(' ')
-
+    .toLowerCase()
+    .split(' ')
+    .map((word, index) =>
+      index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join('');
 };
 
 console.log(camelCase("this is a string"));
